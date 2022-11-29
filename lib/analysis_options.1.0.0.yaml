@@ -137,3 +137,6 @@ linter:
 
     # Too restrictive in terms of method naming
     use_to_and_as_if_applicable: false
+
+    # Requires meta dependency
+    avoid_equals_and_hash_code_on_mutable_classes: false
