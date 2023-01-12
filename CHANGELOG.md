@@ -1,3 +1,10 @@
+## 1.2.0
+* Remove `always_require_non_null_named_parameters` due to deprecation
+* Remove `avoid_returning_null` due to deprecation
+* Remove `avoid_returning_null_for_future` due to deprecation
+* Remove `prefer_equal_for_default_values` due to deprecation
+* Add `unnecessary_breaks` new rule
+
 ## 1.1.0
 * `omit_local_variable_types: false`
 * `unnecessary_lambdas: false`
