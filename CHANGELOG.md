@@ -11,6 +11,7 @@
 * Add `no_literal_bool_comparisons` new rule
 * Add `no_self_assignments` new rule
 * Add `no_wildcard_variable_uses` new rule
+* Add `flutter_style_todos` existing role unlocked
 * Add `type_literal_in_constant_pattern` new rule
 * Upgrade required Dart SDK to 3.1.0
 
