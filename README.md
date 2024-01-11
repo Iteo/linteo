@@ -16,6 +16,18 @@ Provides set of Flutter and Dart linter rules used at [iteo]. By default, packag
 1. Depend on this package as a dev_dependency by running `flutter pub add --dev linteo`
 2. Create `analysis_options.yaml` file at the root of the package (alongside the pubspec.yaml file) and include: `package:linteo/analysis_options.yaml` from it.
 
+
+## Which version to use?
+
+| Dart Version | Linteo Version                                                            |
+|--------------|-------------------------------------------------------------------------|
+| `3.1`        | [`1.3.0`](https://pub.dev/packages/linteo/versions/1.3.0/changelog)|
+| `2.17`       | [`1.2.0`](https://pub.dev/packages/linteo/versions/1.2.0/changelog)|
+| `2.17`       | [`1.1.0`](https://pub.dev/packages/linteo/versions/1.1.0/changelog)|
+| `2.17`       | [`1.0.1`](https://pub.dev/packages/linteo/versions/1.1.0/changelog)|
+| `2.18`       | [`1.0.0`](https://pub.dev/packages/linteo/versions/1.0.0/changelog)|
+    
+
 ### **Example** `analysis_options.yaml` file
 
 ```yaml
