@@ -1,0 +1,63 @@
+name: On Review Approved
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  on_pull_request_approve:
+    permissions:
+      id-token: write # This is required for requesting the JWT
+    if: github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
+    
+    outputs:
+      version: ${{ steps.complete_action.outputs.version }}
+      branch: ${{ steps.extract_branch.outputs.branch }}
+      
+    steps:
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+        
+      - uses: actions/checkout@v4.1.1
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - name: Run complete action
+        id: complete_action
+        run: |
+          dart pub get
+          cd linteo_extractor
+          dart pub get
+          cd ..
+
+          git config user.email "kamil.falinski@gmail.com"
+          git config user.name "Kamil Faliński"
+
+          LOCAL_VERSION=$(dart run linteo_extractor/bin/on_review_approved.dart ${{ github.workspace }} "${{ github.event.pull_request.body }}" "${{ github.event.pull_request.html_url }}")
+          echo "version=$LOCAL_VERSION" >> $GITHUB_OUTPUT
+
+          rm -rf new_lints.tmp
+          git checkout -b ${{ github.event.pull_request.head.ref }}
+
+          git add .
+          git commit -m "Update analysis_options.yaml"
+          git pull --rebase origin ${{ github.event.pull_request.head.ref }}
+          
+          git push origin "${{ github.event.pull_request.head.ref }}"
+          
+          git reset --soft HEAD~2 && git commit -m "Update analysis_options.yaml"
+          git push origin "${{ github.event.pull_request.head.ref }}" --force
+          
+          git checkout -b main
+          git merge "${{ github.event.pull_request.head.ref }}"
+
+          git push origin main
+          git push origin -d "${{ github.event.pull_request.head.ref }}"
+
+      - name: Create & push tag
+        id: push_tag
+        run: |
+          git tag ${{ steps.complete_action.outputs.version }}
+          git push origin ${{ steps.complete_action.outputs.version }}
