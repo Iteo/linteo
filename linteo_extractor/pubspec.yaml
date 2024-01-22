@@ -1,0 +1,19 @@
+name: linteo_extractor
+description: Lints extractor for Linteo
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  collection: 1.18.0
+  crypto: 3.0.3
+  http: 1.2.0
+  meta: 1.11.0
+  yaml: 3.1.2
+
+dev_dependencies:
+  linteo: 1.3.0
+  mocktail: 1.0.2
+  test: 1.25.1

@@ -1,0 +1,80 @@
+name: On Lints Changed
+
+on:
+  schedule:
+    - cron:  '0 9 * * 1'
+
+jobs:
+  create_pull_request:
+    permissions:
+      id-token: write # This is required for requesting the JWT
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Assign randomized env variable in case of more daily commits
+        id: vars
+        run: |
+          SEED=$RANDOM
+          CURRENT_DATE=$(date +%Y_%m_%d)
+          BRANCH_NAME="feature/lints_${CURRENT_DATE}_$SEED"
+
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_OUTPUT
+
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - name: Install dependencies & Run tests
+        run: |
+          dart pub get
+          cd linteo_extractor
+          dart pub get
+          dart test
+
+      - name: Run program
+        run: dart run linteo_extractor/bin/on_lints_changed.dart "${{ github.workspace }}"
+
+      - name: Check file existence
+        id: check_output_existence
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "new_lints.tmp, deleted_lints.tmp"
+
+      - name: Add lints to project
+        if: steps.check_output_existence.outputs.files_exists == 'true'
+        run: |
+          git config user.email "kamil.falinski@gmail.com"
+          git config user.name "Kamil Faliński"
+          git status
+
+          git checkout -b "${{ steps.vars.outputs.BRANCH_NAME }}"
+          git add "lib/all_lint_rules.yaml"
+
+          git commit -m "Update lib/all_lint_rules.yaml"
+          git push origin "${{ steps.vars.outputs.BRANCH_NAME }}"
+
+      - name: Create Pull Request
+        if: steps.check_output_existence.outputs.files_exists == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          new_lints_file_contents=$(cat new_lints.tmp)
+          deleted_lints_file_contents=$(cat deleted_lints.tmp)
+          if [[ -z "$new_lints_file_contents" && -n "$deleted_lints_file_contents" ]]; then
+            pr_body="This rules was deleted: 
+            $deleted_lints_file_contents"
+          elif [[ -n "$new_lints_file_contents" && -z "$deleted_lints_file_contents" ]]; then
+            pr_body="Please unselect, which new rules you wish to disable: 
+            $new_lints_file_contents"
+          elif [[ -n "$new_lints_file_contents" && -n "$deleted_lints_file_contents" ]]; then
+            pr_body="This rules was deleted: 
+            $deleted_lints_file_contents
+            
+            Please unselect, which new rules you wish to disable: 
+            $new_lints_file_contents"
+          else
+            pr_body="Nothing changed in lints"
+          fi
+          gh pr create \
+          -B main \
+          -H ${{ steps.vars.outputs.BRANCH_NAME }} \
+          --title "${{ steps.vars.outputs.BRANCH_NAME }}" \
+          --body "$pr_body"
