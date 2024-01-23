@@ -6,8 +6,6 @@ on:
 
 jobs:
   create_pull_request:
-    permissions:
-      id-token: write # This is required for requesting the JWT
     runs-on: ubuntu-latest
 
     steps:
@@ -41,8 +39,8 @@ jobs:
       - name: Add lints to project
         if: steps.check_output_existence.outputs.files_exists == 'true'
         run: |
-          git config user.email "kamil.falinski@gmail.com"
-          git config user.name "Kamil Faliński"
+          git config user.email ""
+          git config user.name "iteo-bot"
           git status
 
           git checkout -b "${{ steps.vars.outputs.BRANCH_NAME }}"

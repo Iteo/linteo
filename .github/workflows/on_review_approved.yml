@@ -6,8 +6,6 @@ on:
 
 jobs:
   on_pull_request_approve:
-    permissions:
-      id-token: write # This is required for requesting the JWT
     if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     
@@ -32,8 +30,8 @@ jobs:
           dart pub get
           cd ..
 
-          git config user.email "kamil.falinski@gmail.com"
-          git config user.name "Kamil Faliński"
+          git config user.email ""
+          git config user.name "iteo-bot"
 
           LOCAL_VERSION=$(dart run linteo_extractor/bin/on_review_approved.dart ${{ github.workspace }} "${{ github.event.pull_request.body }}" "${{ github.event.pull_request.html_url }}")
           echo "version=$LOCAL_VERSION" >> $GITHUB_OUTPUT
