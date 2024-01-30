@@ -32,7 +32,7 @@ jobs:
 
       - name: Check file existence
         id: check_output_existence
-        uses: andstor/file-existence-action@v2
+        uses: andstor/file-existence-action@v3
         with:
           files: "new_lints.tmp, deleted_lints.tmp"
 
