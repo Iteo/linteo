@@ -1,3 +1,21 @@
+## 1.5.0
+
+  * Add `always_require_non_null_named_parameters` new rule
+  * Add `avoid_returning_null` new rule
+  * Add `avoid_returning_null_for_future` new rule
+  * Add `avoid_unstable_final_fields` new rule
+  * Add `iterable_contains_unrelated_type` new rule
+  * Add `list_remove_unrelated_type` new rule
+
+## 1.4.0
+
+  * Add `always_require_non_null_named_parameters` new rule
+  * Add `avoid_returning_null` new rule
+  * Add `avoid_returning_null_for_future` new rule
+  * Add `avoid_unstable_final_fields` new rule
+  * Add `iterable_contains_unrelated_type` new rule
+  * Add `list_remove_unrelated_type` new rule
+
 ## 1.3.0
 
 * Add `annotate_redeclares` new experimental rule
