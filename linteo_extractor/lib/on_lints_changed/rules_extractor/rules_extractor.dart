@@ -4,7 +4,7 @@ import 'package:crypto/crypto.dart';
 
 abstract class RulesExtractor {
   RulesExtractor(this.input) {
-    final body = getBody();
+    final body = _getBody();
     _lints = _getLints(body);
   }
 
@@ -23,7 +23,9 @@ abstract class RulesExtractor {
     return digest.toString();
   }
 
-  String getBody();
+  String getRawBody();
+
+  String _getBody() => getRawBody().replaceAll('linter:', '').replaceAll('rules:', '').trim();
 
   List<String> _getLints(String body) {
     final rawLints = body.split('-');

@@ -1,1108 +1,225 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5VSZM5J');</script>
-  <!-- End Google Tag Manager -->
-  
-  <meta name="description" content="Auto-generated configuration enabling all linter rules.">
-  <title>All linter rules | Dart</title>
-
-  <!-- Favicon / Touch Icons -->
-  <link rel="icon" sizes="64x64" href="/assets/shared/dart/icon/64.png">
-  <link href="/assets/img/touch-icon-iphone.png" rel="apple-touch-icon">
-  <link href="/assets/img/touch-icon-ipad.png" rel="apple-touch-icon" sizes="152x152">
-  <link href="/assets/img/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="/assets/img/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="167x167">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@dart_lang">
-  <meta name="twitter:title" content="All linter rules">
-  <meta name="twitter:description" content="Auto-generated configuration enabling all linter rules.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="All linter rules">
-  <meta property="og:description" content="Auto-generated configuration enabling all linter rules.">
-  <meta property="og:url" content="https://dart.dev/tools/linter-rules/all.html">
-
-  <meta property="og:image" content="https://dart.dev/assets/shared/dart-logo-for-shares.png?2">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Display:wght@400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/assets/css/main.css?v=1705558216">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-          integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
-          integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.5/js.cookie.min.js"
-          integrity="sha512-nlp9/l96/EpjYBx7EP7pGASVXNe80hGhYAUrjeXnu/fyF5Py0/RXav4BBNs7n5Hx1WFhOEOWSAVjGeC3oKxDVQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"></script>
-
-  <script src="/assets/js/vendor/code-prettify/prettify.js"></script>
-  <script src="/assets/js/vendor/code-prettify/lang-dart.js"></script>
-  <script src="/assets/js/vendor/code-prettify/lang-yaml.js"></script>
-  <script src="/assets/js/os-tabs.js?v=1705558216"></script>
-  <script src="/assets/js/utilities.js?v=1705558216"></script>
-  <script src="/assets/js/main.js?v=1705558216"></script>
-
-  <script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-26406144-4', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-
- </head>
-
-  <body class="default show_banner">
-    <section id="cookie-notice">
-  <div class="container">
-    <p>Google uses cookies to deliver its services, to personalize ads, and to 
-      analyze traffic. You can adjust your privacy controls anytime in your 
-      <a href="https://myaccount.google.com/data-and-personalization" target="_blank" rel="noopener" class="no-automatic-external">Google settings</a>. 
-      <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener" class="no-automatic-external">Learn more</a>.
-    </p>
-    <button id="cookie-consent" class="btn btn-primary">Okay</button>
-  </div>
-</section>
-
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VSZM5J"
- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <header id="page-header" class="site-header">
-  <nav id="mainnav" class="site-header">
-  <div id="menu-toggle"><i class="material-icons">menu</i></div>
-  <a href="/" class="brand" title="Dart">
-    <img src="/assets/img/shared/dart/logo+text/horizontal/white.svg" alt="Dart">
-  </a>
-  <ul class="navbar">
-    <li>
-      <a href="/overview" class="nav-link">Overview</a>
-    </li>
-    <li class="mainnav__get-started">
-      <a href="/guides" class="nav-link
-         active">
-        <span>Docs</span>
-      </a>
-    </li>
-    <li>
-      <a href="/community" class="nav-link">Community</a>
-    </li>
-    <li>
-      <a href="/#try-dart" class="nav-link">Try Dart</a>
-    </li>
-    <li>
-      <a href="/get-dart" class="nav-link">Get Dart</a>
-    </li>
-    <li class="searchfield">
-      <form action="/search" class="site-header__search form-inline" id="cse-search-box">
-        <input type="hidden" name="cx" value="011220921317074318178:_yy-tmb5t_i">
-        <input type="hidden" name="ie" value="UTF-8">
-        <input type="hidden" name="hl" value="en">
-        <input class="site-header__searchfield form-control search-field" type="search" name="q"
-          id="search-main" autocomplete="off" placeholder="Search" aria-label="Search">
-      </form>
-    </li>
-  </ul>
-</nav>
-
-  
-</header>
- <div class="banner">
-  <p class="banner__text">
-    Check out the
-    <a href="https://medium.com/dartlang/dart-3-2-c8de8fe1b91f" class="no-automatic-external">Dart 3.2 blog post</a>!
-    <br>
-    This release brings enhancements to type promotion, interop capabilities,
-    DevTools, and more.
-  </p>
-</div>
- 
-
-    <div id="sidenav" class="">
-  <form action="/search/" class="site-header__search form-inline">
-    <input class="site-header__searchfield form-control search-field" type="search" name="q"
-           id="search-side" autocomplete="off" placeholder="Search" aria-label="Search">
-  </form>
-
-  <div class="site-sidebar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a href="/overview" class="nav-link">Overview</a>
-      </li>
-      <li class="nav-item">
-        <a href="/community" class="nav-link">Community</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://dartpad.dev" class="nav-link">Try Dart</a>
-      </li>
-      <li class="nav-item">
-        <a href="/get-dart" class="nav-link">Get Dart</a>
-      </li>
-      <li class="nav-item">
-        <a href="/guides" class="nav-link active">Docs</a>
-      </li>
-    </ul>
-
-    <ul class="nav flex-column"><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-1" role="button"
-        aria-expanded="false" aria-controls="sidenav-1"
-      >Tutorials & codelabs</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-1">
-        <li class="nav-item">
-    <a class="nav-link" href="/tutorials">Tutorials</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable"
-      data-toggle="collapse" data-target="#sidenav-1-2"
-      href="#sidenav-1-2" role="button"
-      aria-expanded="true" aria-controls="sidenav-1-2"
-    >Codelabs
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-1-2">
-      <li class="nav-item">
-    <a class="nav-link" href="/codelabs">List of Dart codelabs</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/codelabs/dart-cheatsheet">Language cheatsheet</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/codelabs/iterables">Iterable collections</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/codelabs/async-await">Asynchronous programming</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/codelabs/null-safety">Null safety</a>
-  </li></ul>
-  </li>
-
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-2" role="button"
-        aria-expanded="false" aria-controls="sidenav-2"
-      >Language</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2">
-        <li class="nav-item">
-    <a class="nav-link" href="/language">Introduction</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-2"
-      href="#sidenav-2-2" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-2"
-    >Syntax basics
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-2">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/variables">Variables</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/operators">Operators</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/comments">Comments</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/metadata">Metadata</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/libraries">Libraries & imports</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/keywords">Keywords</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-3"
-      href="#sidenav-2-3" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-3"
-    >Types
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-3">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/built-in-types">Built-in types</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/records">Records</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/collections">Collections</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/generics">Generics</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/typedefs">Typedefs</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/type-system">Type system</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-4"
-      href="#sidenav-2-4" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-4"
-    >Patterns
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-4">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/patterns">Overview & usage</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/pattern-types">Pattern types</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link" href="/language/functions">Functions</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-6"
-      href="#sidenav-2-6" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-6"
-    >Control flow
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-6">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/loops">Loops</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/branches">Branches</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link" href="/language/error-handling">Error handling</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-8"
-      href="#sidenav-2-8" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-8"
-    >Classes & objects
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-8">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/classes">Classes</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/constructors">Constructors</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/methods">Methods</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/extend">Extend a class</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/mixins">Mixins</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/enums">Enums</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/extension-methods">Extension methods</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/callable-objects">Callable objects</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-9"
-      href="#sidenav-2-9" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-9"
-    >Class modifiers
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-9">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/class-modifiers">Overview & usage</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/class-modifiers-for-apis">Class modifiers for API maintainers</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/modifier-reference">Reference</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-10"
-Unhandled exception:
-RangeError (end): Invalid value: Not in inclusive range 34287..43612: 34009
-#0      RangeError.checkValidRange (dart:core/errors.dart:365:9)
-#1      _StringBase.substring (dart:core-patch/string_patch.dart:398:27)
-#2      HtmlExtractor.getRawBody (package:linteo_extractor/on_lints_changed/html_extractor.dart:24:18)
-#3      HtmlExtractor.getBody (package:linteo_extractor/on_lints_changed/html_extractor.dart:8:12)
-#4      new RulesExtractor (package:linteo_extractor/on_lints_changed/rules_extractor.dart:7:18)
-#5      new HtmlExtractor (package:linteo_extractor/on_lints_changed/html_extractor.dart)
-#6      LintsManager.create (package:linteo_extractor/on_lints_changed/lints_manager.dart:30:27)
-<asynchronous suspension>
-#7      OnLintsChangedRunner.create (package:linteo_extractor/on_lints_changed/on_lints_changed_runner.dart:16:21)
-<asynchronous suspension>
-#8      main (file:///home/runner/work/linteo_with_extractor/linteo_with_extractor/linteo_extractor/bin/on_lints_changed.dart:5:18)
-<asynchronous suspension>
-      href="#sidenav-2-10" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-10"
-    >Concurrency
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-10">
-      <li class="nav-item">
-    <a class="nav-link" href="/language/concurrency">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/async">Asynchronous support</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/language/isolates">Isolates</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-2-11"
-      href="#sidenav-2-11" role="button"
-      aria-expanded="false" aria-controls="sidenav-2-11"
-    >Null safety
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-11">
-      <li class="nav-item">
-    <a class="nav-link" href="/null-safety">Sound null safety</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/null-safety/migration-guide">Migrating to null safety</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/null-safety/understanding-null-safety">Understanding null safety</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/null-safety/unsound-null-safety">Unsound null safety</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/null-safety/faq">FAQ</a>
-  </li></ul>
-  </li>
-
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-3" role="button"
-        aria-expanded="false" aria-controls="sidenav-3"
-      >Effective Dart</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-3">
-        <li class="nav-item">
-    <a class="nav-link" href="/effective-dart">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/effective-dart/style">Style</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/effective-dart/documentation">Documentation</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/effective-dart/usage">Usage</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/effective-dart/design">Design</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-4" role="button"
-        aria-expanded="false" aria-controls="sidenav-4"
-      >Core libraries</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-4">
-        <li class="nav-item">
-    <a class="nav-link" href="/libraries">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-core">dart:core</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-async">dart:async</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-math">dart:math</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-convert">dart:convert</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-io">dart:io</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/libraries/dart-html">dart:html</a>
-  </li><div class="dropdown-divider"></div><li class="nav-item">
-    <a class="nav-link" href="/tutorials/language/streams">Using streams</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/articles/libraries/creating-streams">Creating streams</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/libraries/futures-error-handling">Futures and error handling</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-5" role="button"
-        aria-expanded="false" aria-controls="sidenav-5"
-      >Packages</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5">
-        <li class="nav-item">
-    <a class="nav-link" href="/guides/packages">How to use packages</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/libraries/useful-libraries">Commonly used packages</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/libraries/create-packages">Creating packages</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/publishing">Publishing packages</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/libraries/writing-package-pages">Writing package pages</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-5-6"
-      href="#sidenav-5-6" role="button"
-      aria-expanded="false" aria-controls="sidenav-5-6"
-    >Package reference
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-6">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/pub/dependencies">Dependencies</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/glossary">Glossary</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/package-layout">Package layout conventions</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/environment-variables">Pub environment variables</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/pubspec">Pubspec file</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/troubleshoot">Troubleshooting pub</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/verified-publishers">Verified publishers</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/pub/versioning">Versioning</a>
-  </li></ul>
-  </li>
-
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-6" role="button"
-        aria-expanded="false" aria-controls="sidenav-6"
-      >Development</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6">
-        <li class="nav-item">
-    <a class="nav-link" href="/codelabs/async-await">Futures, async, await</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/json">JSON</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/language/numbers">Number representation</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/google-apis">Google APIs</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/multiplatform-apps">Multi-platform apps</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-6-6"
-      href="#sidenav-6-6" role="button"
-      aria-expanded="false" aria-controls="sidenav-6-6"
-    >Command-line & server apps
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-6">
-      <li class="nav-item">
-    <a class="nav-link" href="/server">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tutorials/server/get-started">Get started</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tutorials/server/cmdline">Write command-line apps</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tutorials/server/fetch-data">Fetch data from the internet</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tutorials/server/httpserver">Write HTTP servers</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/server/libraries">Libraries & packages</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/server/google-cloud">Google Cloud</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-6-7"
-      href="#sidenav-6-7" role="button"
-      aria-expanded="false" aria-controls="sidenav-6-7"
-    >Web apps
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-7">
-      <li class="nav-item">
-    <a class="nav-link" href="/web">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/web/get-started">Get started</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/web/deployment">Deployment</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/web/libraries">Libraries & packages</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link" href="/guides/environment-declarations">Environment declarations</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-7" role="button"
-        aria-expanded="false" aria-controls="sidenav-7"
-      >Interoperability</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-7">
-        <li class="nav-item">
-    <a class="nav-link" href="/interop/c-interop">C interop</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/interop/objective-c-interop">Objective-C & Swift interop</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/interop/java-interop">Java & Kotlin interop</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/interop/js-interop">JavaScript interop</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link active" data-toggle="collapse" href="#sidenav-8" role="button"
-        aria-expanded="true" aria-controls="sidenav-8"
-      >Tools & techniques</a>
-
-      <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8">
-        <li class="nav-item">
-    <a class="nav-link" href="/tools">Overview</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-8-2"
-      href="#sidenav-8-2" role="button"
-      aria-expanded="false" aria-controls="sidenav-8-2"
-    >Editors & debuggers
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-8-2">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/jetbrains-plugin">IntelliJ & Android Studio</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/vs-code">VS Code</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/dart-devtools">Dart DevTools</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-8-2-4"
-      href="#sidenav-8-2-4" role="button"
-      aria-expanded="false" aria-controls="sidenav-8-2-4"
-    >DartPad
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-8-2-4">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/dartpad">Overview</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dartpad/troubleshoot">Troubleshooting DartPad</a>
-  </li>
-  </ul>
-  </li>
-</ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-8-3"
-      href="#sidenav-8-3" role="button"
-      aria-expanded="false" aria-controls="sidenav-8-3"
-    >Command-line tools
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-8-3">
-      <li class="nav-item">
-    <a class="nav-link collapsable"
-      data-toggle="collapse" data-target="#sidenav-8-3-1"
-      href="#sidenav-8-3-1" role="button"
-      aria-expanded="true" aria-controls="sidenav-8-3-1"
-    >Dart SDK
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-3-1">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/sdk">Overview</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-tool">dart</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-analyze">dart analyze</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-compile">dart compile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-create">dart create</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-doc">dart doc</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-fix">dart fix</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-format">dart format</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-info">dart info</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/pub/cmd">dart pub</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-run">dart run</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dart-test">dart test</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/dartaotruntime">dartaotruntime</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/experiment-flags">Experiment flags</a>
-  </li>
-  </ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable"
-      data-toggle="collapse" data-target="#sidenav-8-3-2"
-      href="#sidenav-8-3-2" role="button"
-      aria-expanded="true" aria-controls="sidenav-8-3-2"
-    >Other command-line tools
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-3-2">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/build_runner">build_runner</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/tools/webdev">webdev</a>
-  </li>
-  </ul>
-  </li>
-</ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link active collapsable"
-      data-toggle="collapse" data-target="#sidenav-8-4"
-      href="#sidenav-8-4" role="button"
-      aria-expanded="true" aria-controls="sidenav-8-4"
-    >Static analysis
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-4">
-      <li class="nav-item">
-    <a class="nav-link" href="/tools/analysis">Customizing static analysis</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/diagnostic-messages">Diagnostic messages</a>
-  </li><li class="nav-item">
-    <a class="nav-link active" href="/tools/linter-rules">Linter rules</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/language/sound-problems">Fixing common type problems</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/tools/non-promotion-reasons">Fixing type promotion failures</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-8-5"
-      href="#sidenav-8-5" role="button"
-      aria-expanded="false" aria-controls="sidenav-8-5"
-    >Testing & optimization
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-8-5">
-      <li class="nav-item">
-    <a class="nav-link" href="/guides/testing">Testing</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/web/debugging">Debugging web apps</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link" href="/guides/libraries/private-files">What not to commit</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-9" role="button"
-        aria-expanded="false" aria-controls="sidenav-9"
-      >Resources</a>
-
-      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-9">
-        <li class="nav-item">
-    <a class="nav-link" href="/resources/faq">FAQ</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/resources/breaking-changes">Breaking changes</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/language/evolution">Language evolution</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/language/spec">Language specification</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/resources/dart-3-migration">Dart 3 migration guide</a>
-  </li><li class="nav-item">
-    <a class="nav-link collapsable collapsed"
-      data-toggle="collapse" data-target="#sidenav-9-6"
-      href="#sidenav-9-6" role="button"
-      aria-expanded="false" aria-controls="sidenav-9-6"
-    >Coming from ...
-    </a>
-    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-9-6">
-      <li class="nav-item">
-    <a class="nav-link" href="/guides/language/coming-from/js-to-dart">JavaScript to Dart</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/guides/language/coming-from/swift-to-dart">Swift to Dart</a>
-  </li></ul>
-  </li>
-<li class="nav-item">
-    <a class="nav-link" href="/resources/glossary">Glossary</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/resources/books">Books</a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="/resources/videos">Videos</a>
-  </li>
-</ul>
-    </li><li class="nav-item">
-      <a class="nav-link " data-toggle="collapse" href="#sidenav-10" role="button"
-        aria-expanded="true" aria-controls="sidenav-10"
-      >Related sites</a>
-
-      <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-10">
-        <li class="nav-item">
-    <a class="nav-link" href="https://api.dart.dev" target="_blank" rel="noopener">API reference<span class="material-icons md-24">
-        open_in_new
-      </span></a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="https://medium.com/dartlang" target="_blank" rel="noopener">Blog<span class="material-icons md-24">
-        open_in_new
-      </span></a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="https://dartpad.dev" target="_blank" rel="noopener">DartPad (online editor)<span class="material-icons md-24">
-        open_in_new
-      </span></a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="https://flutter.dev" target="_blank" rel="noopener">Flutter<span class="material-icons md-24">
-        open_in_new
-      </span></a>
-  </li><li class="nav-item">
-    <a class="nav-link" href="https://pub.dev" target="_blank" rel="noopener">Package site<span class="material-icons md-24">
-        open_in_new
-      </span></a>
-  </li>
-</ul>
-    </li></ul>
-
-  </div>
-</div>
-
-    <main id="page-content">
-      
-
-      <article>
-        <div class="content">
-          
-
-          <div id="site-content-title">
-            <div id="page-github-links" class="btn-group" aria-label="Page GitHub links" role="group">
-  <a href="https://github.com/dart-lang/site-www/tree/main/src/tools/linter-rules/all.md" class="btn no-automatic-external" title="View page source" target="_blank" rel="noopener">
-    <i class="material-icons">description</i>
-  </a>
-  <a href="https://github.com/dart-lang/site-www/issues/new?template=1_page_issue.yml&title=[PAGE ISSUE]: 'All linter rules'&page-url=https://dart.dev/tools/linter-rules/all.html&page-source=https://github.com/dart-lang/site-www/tree/main/src/tools/linter-rules/all.md" class="btn no-automatic-external" title="Report an issue with this page"
-    target="_blank" rel="noopener">
-    <i class="material-icons">bug_report</i>
-  </a>
-</div>
-
-            
-            <h1>All linter rules</h1>
-            
-
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-  <li class="breadcrumb-item"
-      property="itemListElement" typeof="ListItem"><a href="/tools" property="item" typeof="WebPage"><span property="name">Tools</span>
-      </a>
-      <meta property="position" content="1" />
-    </li>
-  <li class="breadcrumb-item"
-      property="itemListElement" typeof="ListItem"><a href="/tools/linter-rules" property="item" typeof="WebPage"><span property="name">Linter rules</span>
-      </a>
-      <meta property="position" content="2" />
-    </li>
-  <li class="breadcrumb-item active"
-      property="itemListElement" typeof="ListItem" aria-current="page"><a href="/tools/linter-rules/all.html" property="item" typeof="WebPage"><span property="name">All linter rules</span>
-      </a>
-      <meta property="position" content="3" />
-    </li>
-  
-  </ol>
-</nav>
-            </div>
-          
-
-          <p>The following is an auto-generated list of all linter rules
-available in the Dart SDK as of version <code class="language-plaintext highlighter-rouge">3.2.5</code>.
-Add them to your
-<a href="/tools/analysis"><code class="language-plaintext highlighter-rouge">analysis_options.yaml</code></a> file
-and adjust as you see fit.</p>
-
-<div class="code-excerpt">
-<div class="code-excerpt__code"><pre><code class="yaml prettyprint lang-yaml">linter:
-  rules:
-    - always_declare_return_types
-    - always_put_control_body_on_new_line
-    - always_put_required_named_parameters_first
-    - always_require_non_null_named_parameters
-    - always_specify_types
-    - always_use_package_imports
-    - annotate_overrides
-    - annotate_redeclares
-    - avoid_annotating_with_dynamic
-    - avoid_bool_literals_in_conditional_expressions
-    - avoid_catches_without_on_clauses
-    - avoid_catching_errors
-    - avoid_classes_with_only_static_members
-    - avoid_double_and_int_checks
-    - avoid_dynamic_calls
-    - avoid_empty_else
-    - avoid_equals_and_hash_code_on_mutable_classes
-    - avoid_escaping_inner_quotes
-    - avoid_field_initializers_in_const_classes
-    - avoid_final_parameters
-    - avoid_function_literals_in_foreach_calls
-    - avoid_implementing_value_types
-    - avoid_init_to_null
-    - avoid_js_rounded_ints
-    - avoid_multiple_declarations_per_line
-    - avoid_null_checks_in_equality_operators
-    - avoid_positional_boolean_parameters
-    - avoid_print
-    - avoid_private_typedef_functions
-    - avoid_redundant_argument_values
-    - avoid_relative_lib_imports
-    - avoid_renaming_method_parameters
-    - avoid_return_types_on_setters
-    - avoid_returning_null
-    - avoid_returning_null_for_future
-    - avoid_returning_null_for_void
-    - avoid_returning_this
-    - avoid_setters_without_getters
-    - avoid_shadowing_type_parameters
-    - avoid_single_cascade_in_expression_statements
-    - avoid_slow_async_io
-    - avoid_type_to_string
-    - avoid_types_as_parameter_names
-    - avoid_types_on_closure_parameters
-    - avoid_unnecessary_containers
-    - avoid_unstable_final_fields
-    - avoid_unused_constructor_parameters
-    - avoid_void_async
-    - avoid_web_libraries_in_flutter
-    - await_only_futures
-    - camel_case_extensions
-    - camel_case_types
-    - cancel_subscriptions
-    - cascade_invocations
-    - cast_nullable_to_non_nullable
-    - close_sinks
-    - collection_methods_unrelated_type
-    - combinators_ordering
-    - comment_references
-    - conditional_uri_does_not_exist
-    - constant_identifier_names
-    - control_flow_in_finally
-    - curly_braces_in_flow_control_structures
-    - dangling_library_doc_comments
-    - depend_on_referenced_packages
-    - deprecated_consistency
-    - deprecated_member_use_from_same_package
-    - diagnostic_describe_all_properties
-    - directives_ordering
-    - discarded_futures
-    - do_not_use_environment
-    - empty_catches
-    - empty_constructor_bodies
-    - empty_statements
-    - eol_at_end_of_file
-    - exhaustive_cases
-    - file_names
-    - flutter_style_todos
-    - hash_and_equals
-    - implementation_imports
-    - implicit_call_tearoffs
-    - implicit_reopen
-    - invalid_case_patterns
-    - iterable_contains_unrelated_type
-    - join_return_with_assignment
-    - leading_newlines_in_multiline_strings
-    - library_annotations
-    - library_names
-    - library_prefixes
-    - library_private_types_in_public_api
-    - lines_longer_than_80_chars
-    - list_remove_unrelated_type
-    - literal_only_boolean_expressions
-    - matching_super_parameters
-    - missing_whitespace_between_adjacent_strings
-    - no_adjacent_strings_in_list
-    - no_default_cases
-    - no_duplicate_case_values
-    - no_leading_underscores_for_library_prefixes
-    - no_leading_underscores_for_local_identifiers
-    - no_literal_bool_comparisons
-    - no_logic_in_create_state
-    - no_runtimeType_toString
-    - no_self_assignments
-    - no_wildcard_variable_uses
-    - non_constant_identifier_names
-    - noop_primitive_operations
-    - null_check_on_nullable_type_parameter
-    - null_closures
-    - omit_local_variable_types
-    - one_member_abstracts
-    - only_throw_errors
-    - overridden_fields
-    - package_api_docs
-    - package_names
-    - package_prefixed_library_names
-    - parameter_assignments
-    - prefer_adjacent_string_concatenation
-    - prefer_asserts_in_initializer_lists
-    - prefer_asserts_with_message
-    - prefer_collection_literals
-    - prefer_conditional_assignment
-    - prefer_const_constructors
-    - prefer_const_constructors_in_immutables
-    - prefer_const_declarations
-    - prefer_const_literals_to_create_immutables
-    - prefer_constructors_over_static_methods
-    - prefer_contains
-    - prefer_double_quotes
-    - prefer_expression_function_bodies
-    - prefer_final_fields
-    - prefer_final_in_for_each
-    - prefer_final_locals
-    - prefer_final_parameters
-    - prefer_for_elements_to_map_fromIterable
-    - prefer_foreach
-    - prefer_function_declarations_over_variables
-    - prefer_generic_function_type_aliases
-    - prefer_if_elements_to_conditional_expressions
-    - prefer_if_null_operators
-    - prefer_initializing_formals
-    - prefer_inlined_adds
-    - prefer_int_literals
-    - prefer_interpolation_to_compose_strings
-    - prefer_is_empty
-    - prefer_is_not_empty
-    - prefer_is_not_operator
-    - prefer_iterable_whereType
-    - prefer_mixin
-    - prefer_null_aware_method_calls
-    - prefer_null_aware_operators
-    - prefer_relative_imports
-    - prefer_single_quotes
-    - prefer_spread_collections
-    - prefer_typing_uninitialized_variables
-    - prefer_void_to_null
-    - provide_deprecation_message
-    - public_member_api_docs
-    - recursive_getters
-    - require_trailing_commas
-    - secure_pubspec_urls
-    - sized_box_for_whitespace
-    - sized_box_shrink_expand
-    - slash_for_doc_comments
-    - sort_child_properties_last
-    - sort_constructors_first
-    - sort_pub_dependencies
-    - sort_unnamed_constructors_first
-    - test_types_in_equals
-    - throw_in_finally
-    - tighten_type_of_initializing_formals
-    - type_annotate_public_apis
-    - type_init_formals
-    - type_literal_in_constant_pattern
-    - unawaited_futures
-    - unnecessary_await_in_return
-    - unnecessary_brace_in_string_interps
-    - unnecessary_breaks
-    - unnecessary_const
-    - unnecessary_constructor_name
-    - unnecessary_final
-    - unnecessary_getters_setters
-    - unnecessary_lambdas
-    - unnecessary_late
-    - unnecessary_library_directive
-    - unnecessary_new
-    - unnecessary_null_aware_assignments
-    - unnecessary_null_aware_operator_on_extension_on_nullable
-    - unnecessary_null_checks
-    - unnecessary_null_in_if_null_operators
-    - unnecessary_nullable_for_final_variable_declarations
-    - unnecessary_overrides
-    - unnecessary_parenthesis
-    - unnecessary_raw_strings
-    - unnecessary_statements
-    - unnecessary_string_escapes
-    - unnecessary_string_interpolations
-    - unnecessary_this
-    - unnecessary_to_list_in_spreads
-    - unreachable_from_main
-    - unrelated_type_equality_checks
-    - unsafe_html
-    - use_build_context_synchronously
-    - use_colored_box
-    - use_decorated_box
-    - use_enums
-    - use_full_hex_values_for_flutter_colors
-    - use_function_type_syntax_for_parameters
-    - use_if_null_to_convert_nulls_to_bools
-    - use_is_even_rather_than_modulo
-    - use_key_in_widget_constructors
-    - use_late_for_private_fields_and_variables
-    - use_named_constants
-    - use_raw_strings
-    - use_rethrow_when_possible
-    - use_setters_to_change_properties
-    - use_string_buffers
-    - use_string_in_part_of_directives
-    - use_super_parameters
-    - use_test_throws_matchers
-    - use_to_and_as_if_applicable
-    - valid_regexps
-    - void_checks</code></pre></div>
-</div>
-
-<div class="prettify-filename">analysis_options.yaml</div>
-
-          
-
-        </div>
-      </article>
-    </main>
-    <footer id="page-footer">
-  <div class="footer-section footer-main">
-    <a href="/" class="brand" title="Dart">
-      <img src="/assets/img/shared/dart/logo+text/horizontal/white.svg" alt="Dart" width="164">
-    </a>
-    <div class="footer-social-links">
-      <a href="https://medium.com/dartlang" target="_blank" rel="noopener" title="Medium blog" class="no-automatic-external">
-        <svg>
-          <use href="/assets/img/social/medium.svg#medium"></use>
-        </svg>
-      </a>
-      <a href="https://github.com/dart-lang" target="_blank" rel="noopener" title="GitHub" class="no-automatic-external">
-        <svg>
-          <use href="/assets/img/social/github.svg#github"></use>
-        </svg>
-      </a>
-      <a href="https://twitter.com/dart_lang" target="_blank" rel="noopener" title="X (Twitter)" class="no-automatic-external">
-        <svg>
-          <use href="/assets/img/social/x.svg#x"></use>
-        </svg>
-      </a>
-    </div>
-  </div>
-  <div class="footer-section footer-tray">
-    <div class="footer-licenses">
-      Except as otherwise noted, this site is licensed under a
-      <a href="https://creativecommons.org/licenses/by/4.0/" class="no-automatic-external">Creative Commons Attribution 4.0 International License</a>,
-      and code samples are licensed under the
-      <a href="https://opensource.org/licenses/BSD-3-Clause" class="no-automatic-external">3-Clause BSD License</a>.
-    </div>
-    <div class="footer-utility-links">
-      <ul>
-        <li><a href="/terms" title="Terms of use">Terms</a></li>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" title="Privacy policy" class="no-automatic-external">Privacy</a></li>
-        <li><a href="/security" title="Security philosophy and practices">Security</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-
-  </body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VSZM5J",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><meta name="description" content="Auto-generated configuration enabling all linter rules."><title>All linter rules | Dart</title><link rel="icon" sizes="64x64" href="/assets/img/logo/dart-64.png"><link href="/assets/img/touch-icon-iphone.png" rel="apple-touch-icon"><link href="/assets/img/touch-icon-ipad.png" rel="apple-touch-icon" sizes="152x152"><link href="/assets/img/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="180x180"><link href="/assets/img/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="167x167"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@dart_lang"><meta name="twitter:title" content="All linter rules"><meta name="twitter:description" content="Auto-generated configuration enabling all linter rules."><meta property="og:title" content="All linter rules"><meta property="og:description" content="Auto-generated configuration enabling all linter rules."><meta property="og:url" content="/tools/linter-rules/all/"><meta property="og:image" content="/assets/img/logo/dart-logo-for-shares.png?2"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Google+Sans+Display:wght@400&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Google+Sans+Mono:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link rel="stylesheet" href="/assets/css/main.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.5/js.cookie.min.js" integrity="sha512-nlp9/l96/EpjYBx7EP7pGASVXNe80hGhYAUrjeXnu/fyF5Py0/RXav4BBNs7n5Hx1WFhOEOWSAVjGeC3oKxDVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="/assets/js/os-tabs.js"></script><script src="/assets/js/utilities.js"></script><script src="/assets/js/main.js"></script><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src="//www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-26406144-4","auto"),ga("send","pageview")</script></head><body class="default.html show_banner"><section id="cookie-notice"><div class="container"><p>Google uses cookies to deliver its services, to personalize ads, and to analyze traffic. You can adjust your privacy controls anytime in your <a href="https://myaccount.google.com/data-and-personalization" target="_blank" rel="noopener">Google settings</a>. <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Learn more</a>.</p><button id="cookie-consent" class="btn btn-primary">Okay</button></div></section><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VSZM5J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><header id="page-header" class="site-header"><nav id="mainnav" class="site-header"><div id="menu-toggle"><i class="material-symbols">menu</i></div><a href="/" class="brand" title="Dart"><img src="/assets/img/logo/logo-white-text.svg" alt="Dart"></a><ul class="navbar"><li><a href="/overview" class="nav-link">Overview</a></li><li class="mainnav__get-started"><a href="/guides" class="nav-link active"><span>Docs</span></a></li><li><a href="/community" class="nav-link">Community</a></li><li><a href="/#try-dart" class="nav-link">Try Dart</a></li><li><a href="/get-dart" class="nav-link">Get Dart</a></li><li class="searchfield"><form action="/search" class="site-header__search form-inline" id="cse-search-box"><input type="hidden" name="cx" value="011220921317074318178:_yy-tmb5t_i"> <input type="hidden" name="ie" value="UTF-8"> <input type="hidden" name="hl" value="en"> <input class="site-header__searchfield form-control search-field" type="search" name="q" id="search-main" autocomplete="off" placeholder="Search" aria-label="Search"></form></li></ul></nav></header><div class="banner"><p class="banner__text">Check out the <a href="https://medium.com/dartlang/dart-3-2-c8de8fe1b91f">Dart 3.2 blog post</a>!<br>This release brings enhancements to type promotion, interop capabilities, DevTools, and more.</p></div><div id="sidenav"><form action="/search/" class="site-header__search form-inline"><input class="site-header__searchfield form-control search-field" type="search" name="q" id="search-side" autocomplete="off" placeholder="Search" aria-label="Search"></form><div class="site-sidebar"><ul class="navbar-nav"><li class="nav-item"><a href="/overview" class="nav-link">Overview</a></li><li class="nav-item"><a href="/community" class="nav-link">Community</a></li><li class="nav-item"><a href="https://dartpad.dev" class="nav-link">Try Dart</a></li><li class="nav-item"><a href="/get-dart" class="nav-link">Get Dart</a></li><li class="nav-item"><a href="/guides" class="nav-link active">Docs</a></li></ul><ul class="nav flex-column"><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-1" role="button" aria-expanded="false" aria-controls="sidenav-1">Tutorials & codelabs</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-1"><li class="nav-item"><a class="nav-link" href="/tutorials">Tutorials</a></li><li class="nav-item"><a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-1-2" href="#sidenav-1-2" role="button" aria-expanded="true" aria-controls="sidenav-1-2">Codelabs</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-1-2"><li class="nav-item"><a class="nav-link" href="/codelabs">List of Dart codelabs</a></li><li class="nav-item"><a class="nav-link" href="/codelabs/dart-cheatsheet">Language cheatsheet</a></li><li class="nav-item"><a class="nav-link" href="/codelabs/iterables">Iterable collections</a></li><li class="nav-item"><a class="nav-link" href="/codelabs/async-await">Asynchronous programming</a></li><li class="nav-item"><a class="nav-link" href="/codelabs/null-safety">Null safety</a></li></ul></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-2" role="button" aria-expanded="false" aria-controls="sidenav-2">Language</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2"><li class="nav-item"><a class="nav-link" href="/language">Introduction</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-2" href="#sidenav-2-2" role="button" aria-expanded="false" aria-controls="sidenav-2-2">Syntax basics</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-2"><li class="nav-item"><a class="nav-link" href="/language/variables">Variables</a></li><li class="nav-item"><a class="nav-link" href="/language/operators">Operators</a></li><li class="nav-item"><a class="nav-link" href="/language/comments">Comments</a></li><li class="nav-item"><a class="nav-link" href="/language/metadata">Metadata</a></li><li class="nav-item"><a class="nav-link" href="/language/libraries">Libraries & imports</a></li><li class="nav-item"><a class="nav-link" href="/language/keywords">Keywords</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-3" href="#sidenav-2-3" role="button" aria-expanded="false" aria-controls="sidenav-2-3">Types</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-3"><li class="nav-item"><a class="nav-link" href="/language/built-in-types">Built-in types</a></li><li class="nav-item"><a class="nav-link" href="/language/records">Records</a></li><li class="nav-item"><a class="nav-link" href="/language/collections">Collections</a></li><li class="nav-item"><a class="nav-link" href="/language/generics">Generics</a></li><li class="nav-item"><a class="nav-link" href="/language/typedefs">Typedefs</a></li><li class="nav-item"><a class="nav-link" href="/language/type-system">Type system</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-4" href="#sidenav-2-4" role="button" aria-expanded="false" aria-controls="sidenav-2-4">Patterns</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-4"><li class="nav-item"><a class="nav-link" href="/language/patterns">Overview & usage</a></li><li class="nav-item"><a class="nav-link" href="/language/pattern-types">Pattern types</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/language/functions">Functions</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-6" href="#sidenav-2-6" role="button" aria-expanded="false" aria-controls="sidenav-2-6">Control flow</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-6"><li class="nav-item"><a class="nav-link" href="/language/loops">Loops</a></li><li class="nav-item"><a class="nav-link" href="/language/branches">Branches</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/language/error-handling">Error handling</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-8" href="#sidenav-2-8" role="button" aria-expanded="false" aria-controls="sidenav-2-8">Classes & objects</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-8"><li class="nav-item"><a class="nav-link" href="/language/classes">Classes</a></li><li class="nav-item"><a class="nav-link" href="/language/constructors">Constructors</a></li><li class="nav-item"><a class="nav-link" href="/language/methods">Methods</a></li><li class="nav-item"><a class="nav-link" href="/language/extend">Extend a class</a></li><li class="nav-item"><a class="nav-link" href="/language/mixins">Mixins</a></li><li class="nav-item"><a class="nav-link" href="/language/enums">Enums</a></li><li class="nav-item"><a class="nav-link" href="/language/extension-methods">Extension methods</a></li><li class="nav-item"><a class="nav-link" href="/language/callable-objects">Callable objects</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-9" href="#sidenav-2-9" role="button" aria-expanded="false" aria-controls="sidenav-2-9">Class modifiers</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-9"><li class="nav-item"><a class="nav-link" href="/language/class-modifiers">Overview & usage</a></li><li class="nav-item"><a class="nav-link" href="/language/class-modifiers-for-apis">Class modifiers for API maintainers</a></li><li class="nav-item"><a class="nav-link" href="/language/modifier-reference">Reference</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-10" href="#sidenav-2-10" role="button" aria-expanded="false" aria-controls="sidenav-2-10">Concurrency</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-10"><li class="nav-item"><a class="nav-link" href="/language/concurrency">Overview</a></li><li class="nav-item"><a class="nav-link" href="/language/async">Asynchronous support</a></li><li class="nav-item"><a class="nav-link" href="/language/isolates">Isolates</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-11" href="#sidenav-2-11" role="button" aria-expanded="false" aria-controls="sidenav-2-11">Null safety</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-2-11"><li class="nav-item"><a class="nav-link" href="/null-safety">Sound null safety</a></li><li class="nav-item"><a class="nav-link" href="/null-safety/migration-guide">Migrating to null safety</a></li><li class="nav-item"><a class="nav-link" href="/null-safety/understanding-null-safety">Understanding null safety</a></li><li class="nav-item"><a class="nav-link" href="/null-safety/unsound-null-safety">Unsound null safety</a></li><li class="nav-item"><a class="nav-link" href="/null-safety/faq">FAQ</a></li></ul></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-3" role="button" aria-expanded="false" aria-controls="sidenav-3">Effective Dart</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-3"><li class="nav-item"><a class="nav-link" href="/effective-dart">Overview</a></li><li class="nav-item"><a class="nav-link" href="/effective-dart/style">Style</a></li><li class="nav-item"><a class="nav-link" href="/effective-dart/documentation">Documentation</a></li><li class="nav-item"><a class="nav-link" href="/effective-dart/usage">Usage</a></li><li class="nav-item"><a class="nav-link" href="/effective-dart/design">Design</a></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-4" role="button" aria-expanded="false" aria-controls="sidenav-4">Core libraries</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-4"><li class="nav-item"><a class="nav-link" href="/libraries">Overview</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-core">dart:core</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-async">dart:async</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-math">dart:math</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-convert">dart:convert</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-io">dart:io</a></li><li class="nav-item"><a class="nav-link" href="/libraries/dart-html">dart:html</a></li><div class="dropdown-divider"></div><li class="nav-item"><a class="nav-link" href="/tutorials/language/streams">Using streams</a></li><li class="nav-item"><a class="nav-link" href="/articles/libraries/creating-streams">Creating streams</a></li><li class="nav-item"><a class="nav-link" href="/guides/libraries/futures-error-handling">Futures and error handling</a></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-5" role="button" aria-expanded="false" aria-controls="sidenav-5">Packages</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-5"><li class="nav-item"><a class="nav-link" href="/guides/packages">How to use packages</a></li><li class="nav-item"><a class="nav-link" href="/guides/libraries/useful-libraries">Commonly used packages</a></li><li class="nav-item"><a class="nav-link" href="/guides/libraries/create-packages">Creating packages</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/publishing">Publishing packages</a></li><li class="nav-item"><a class="nav-link" href="/guides/libraries/writing-package-pages">Writing package pages</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-6" href="#sidenav-5-6" role="button" aria-expanded="false" aria-controls="sidenav-5-6">Package reference</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-5-6"><li class="nav-item"><a class="nav-link" href="/tools/pub/dependencies">Dependencies</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/glossary">Glossary</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/package-layout">Package layout conventions</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/environment-variables">Pub environment variables</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/pubspec">Pubspec file</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/troubleshoot">Troubleshooting pub</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/verified-publishers">Verified publishers</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/security-advisories">Security advisories</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/versioning">Versioning</a></li></ul></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-6" role="button" aria-expanded="false" aria-controls="sidenav-6">Development</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-6"><li class="nav-item"><a class="nav-link" href="/codelabs/async-await">Futures, async, await</a></li><li class="nav-item"><a class="nav-link" href="/guides/json">JSON</a></li><li class="nav-item"><a class="nav-link" href="/guides/language/numbers">Number representation</a></li><li class="nav-item"><a class="nav-link" href="/guides/google-apis">Google APIs</a></li><li class="nav-item"><a class="nav-link" href="/multiplatform-apps">Multi-platform apps</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-6" href="#sidenav-6-6" role="button" aria-expanded="false" aria-controls="sidenav-6-6">Command-line & server apps</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-6-6"><li class="nav-item"><a class="nav-link" href="/server">Overview</a></li><li class="nav-item"><a class="nav-link" href="/tutorials/server/get-started">Get started</a></li><li class="nav-item"><a class="nav-link" href="/tutorials/server/cmdline">Write command-line apps</a></li><li class="nav-item"><a class="nav-link" href="/tutorials/server/fetch-data">Fetch data from the internet</a></li><li class="nav-item"><a class="nav-link" href="/tutorials/server/httpserver">Write HTTP servers</a></li><li class="nav-item"><a class="nav-link" href="/server/libraries">Libraries & packages</a></li><li class="nav-item"><a class="nav-link" href="/server/google-cloud">Google Cloud</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-7" href="#sidenav-6-7" role="button" aria-expanded="false" aria-controls="sidenav-6-7">Web apps</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-6-7"><li class="nav-item"><a class="nav-link" href="/web">Overview</a></li><li class="nav-item"><a class="nav-link" href="/web/get-started">Get started</a></li><li class="nav-item"><a class="nav-link" href="/web/deployment">Deployment</a></li><li class="nav-item"><a class="nav-link" href="/web/libraries">Libraries & packages</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/guides/environment-declarations">Environment declarations</a></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-7" role="button" aria-expanded="false" aria-controls="sidenav-7">Interoperability</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-7"><li class="nav-item"><a class="nav-link" href="/interop/c-interop">C interop</a></li><li class="nav-item"><a class="nav-link" href="/interop/objective-c-interop">Objective-C & Swift interop</a></li><li class="nav-item"><a class="nav-link" href="/interop/java-interop">Java & Kotlin interop</a></li><li class="nav-item"><a class="nav-link" href="/interop/js-interop">JavaScript interop</a></li></ul></li><li class="nav-item"><a class="nav-link active" data-toggle="collapse" href="#sidenav-8" role="button" aria-expanded="true" aria-controls="sidenav-8">Tools & techniques</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8"><li class="nav-item"><a class="nav-link" href="/tools">Overview</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-8-2" href="#sidenav-8-2" role="button" aria-expanded="false" aria-controls="sidenav-8-2">Editors & debuggers</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-8-2"><li class="nav-item"><a class="nav-link" href="/tools/jetbrains-plugin">IntelliJ & Android Studio</a></li><li class="nav-item"><a class="nav-link" href="/tools/vs-code">VS Code</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-devtools">Dart DevTools</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-8-2-4" href="#sidenav-8-2-4" role="button" aria-expanded="false" aria-controls="sidenav-8-2-4">DartPad</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-8-2-4"><li class="nav-item"><a class="nav-link" href="/tools/dartpad">Overview</a></li><li class="nav-item"><a class="nav-link" href="/tools/dartpad/troubleshoot">Troubleshooting DartPad</a></li></ul></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-8-3" href="#sidenav-8-3" role="button" aria-expanded="false" aria-controls="sidenav-8-3">Command-line tools</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-8-3"><li class="nav-item"><a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-8-3-1" href="#sidenav-8-3-1" role="button" aria-expanded="true" aria-controls="sidenav-8-3-1">Dart SDK</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-3-1"><li class="nav-item"><a class="nav-link" href="/tools/sdk">Overview</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-tool">dart</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-analyze">dart analyze</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-compile">dart compile</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-create">dart create</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-doc">dart doc</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-fix">dart fix</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-format">dart format</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-info">dart info</a></li><li class="nav-item"><a class="nav-link" href="/tools/pub/cmd">dart pub</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-run">dart run</a></li><li class="nav-item"><a class="nav-link" href="/tools/dart-test">dart test</a></li><li class="nav-item"><a class="nav-link" href="/tools/dartaotruntime">dartaotruntime</a></li><li class="nav-item"><a class="nav-link" href="/tools/experiment-flags">Experiment flags</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-8-3-2" href="#sidenav-8-3-2" role="button" aria-expanded="true" aria-controls="sidenav-8-3-2">Other command-line tools</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-3-2"><li class="nav-item"><a class="nav-link" href="/tools/build_runner">build_runner</a></li><li class="nav-item"><a class="nav-link" href="/tools/webdev">webdev</a></li></ul></li></ul></li><li class="nav-item"><a class="nav-link active collapsable" data-toggle="collapse" data-target="#sidenav-8-4" href="#sidenav-8-4" role="button" aria-expanded="true" aria-controls="sidenav-8-4">Static analysis</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8-4"><li class="nav-item"><a class="nav-link" href="/tools/analysis">Customizing static analysis</a></li><li class="nav-item"><a class="nav-link" href="/guides/language/sound-problems">Fixing common type problems</a></li><li class="nav-item"><a class="nav-link" href="/tools/non-promotion-reasons">Fixing type promotion failures</a></li><li class="nav-item"><a class="nav-link active" href="/tools/linter-rules">Linter rules</a></li></ul></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-8-5" href="#sidenav-8-5" role="button" aria-expanded="false" aria-controls="sidenav-8-5">Testing & optimization</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-8-5"><li class="nav-item"><a class="nav-link" href="/guides/testing">Testing</a></li><li class="nav-item"><a class="nav-link" href="/web/debugging">Debugging web apps</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/guides/libraries/private-files">What not to commit</a></li></ul></li><li class="nav-item"><a class="nav-link collapsed" data-toggle="collapse" href="#sidenav-9" role="button" aria-expanded="false" aria-controls="sidenav-9">Resources</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-9"><li class="nav-item"><a class="nav-link" href="/resources/breaking-changes">Breaking changes</a></li><li class="nav-item"><a class="nav-link" href="/guides/language/evolution">Language evolution</a></li><li class="nav-item"><a class="nav-link" href="/guides/language/spec">Language specification</a></li><li class="nav-item"><a class="nav-link" href="/resources/dart-3-migration">Dart 3 migration guide</a></li><li class="nav-item"><a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-9-5" href="#sidenav-9-5" role="button" aria-expanded="false" aria-controls="sidenav-9-5">Coming from ...</a><ul class="nav flex-column flex-nowrap collapse" id="sidenav-9-5"><li class="nav-item"><a class="nav-link" href="/guides/language/coming-from/js-to-dart">JavaScript to Dart</a></li><li class="nav-item"><a class="nav-link" href="/guides/language/coming-from/swift-to-dart">Swift to Dart</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/resources/faq">FAQ</a></li><li class="nav-item"><a class="nav-link" href="/resources/glossary">Glossary</a></li><li class="nav-item"><a class="nav-link" href="/resources/books">Books</a></li><li class="nav-item"><a class="nav-link" href="/resources/videos">Videos</a></li></ul></li><li class="nav-item"><a class="nav-link" data-toggle="collapse" href="#sidenav-10" role="button" aria-expanded="true" aria-controls="sidenav-10">Related sites</a><ul class="nav flex-column flex-nowrap collapse show" id="sidenav-10"><li class="nav-item"><a class="nav-link" href="https://api.dart.dev" target="_blank" rel="noopener">API reference</a></li><li class="nav-item"><a class="nav-link" href="https://medium.com/dartlang" target="_blank" rel="noopener">Blog</a></li><li class="nav-item"><a class="nav-link" href="https://dartpad.dev" target="_blank" rel="noopener">DartPad (online editor)</a></li><li class="nav-item"><a class="nav-link" href="https://flutter.dev" target="_blank" rel="noopener">Flutter</a></li><li class="nav-item"><a class="nav-link" href="https://pub.dev" target="_blank" rel="noopener">Package site</a></li></ul></li></ul></div></div><main id="page-content"><article><div class="content"><div id="site-content-title"><div id="page-github-links" class="btn-group" aria-label="Page GitHub links" role="group"><a href="https://github.com/dart-lang/site-www/tree/main/./src/content/tools/linter-rules/all.md" class="btn" title="View page source" target="_blank" rel="noopener"><i class="material-symbols">description</i> </a><a href="https://github.com/dart-lang/site-www/issues/new?template=1_page_issue.yml&title=[PAGE ISSUE]: 'All linter rules'&page-url=https://dart.dev/tools/linter-rules/all/&page-source=https://github.com/dart-lang/site-www/tree/main/./src/content/tools/linter-rules/all.md" class="btn" title="Report an issue with this page" target="_blank" rel="noopener"><i class="material-symbols">bug_report</i></a></div><h1>All linter rules</h1><nav aria-label="breadcrumb"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList"><li class="breadcrumb-item" property="itemListElement" typeof="ListItem"><a href="/tools" property="item" typeof="WebPage"><span property="name">Tools</span></a><meta property="position" content="0"></li><li class="breadcrumb-item" property="itemListElement" typeof="ListItem"><a href="/tools/linter-rules" property="item" typeof="WebPage"><span property="name">Linter rules</span></a><meta property="position" content="1"></li><li class="breadcrumb-item active" property="itemListElement" typeof="ListItem" aria-current="page"><a href="/tools/linter-rules/all" property="item" typeof="WebPage"><span property="name">All linter rules</span></a><meta property="position" content="2"></li></ol></nav></div><p>The following is an auto-generated list of all linter rules available in the Dart SDK as of version <code>3.1.5</code>. Add them to your <a href="/tools/analysis"><code>analysis_options.yaml</code></a> file and adjust as you see fit.</p><div class="code-block-wrapper language-yaml"><div class="code-block-header">analysis_options.yaml</div><div class="code-block-body"><span class="code-block-language" title="Language yaml">yaml</span><pre class="shiki dash-light" tabindex="0"><code><span class="line"><span style="color:#0468D7">linter</span><span style="color:#222222">:</span></span>
+<span class="line"><span style="color:#0468D7">  rules</span><span style="color:#222222">:</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_declare_return_types</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_put_control_body_on_new_line</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_put_required_named_parameters_first</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_require_non_null_named_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_specify_types</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">always_use_package_imports</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">annotate_overrides</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">annotate_redeclares</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_annotating_with_dynamic</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_bool_literals_in_conditional_expressions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_catches_without_on_clauses</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_catching_errors</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_classes_with_only_static_members</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_double_and_int_checks</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_dynamic_calls</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_empty_else</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_equals_and_hash_code_on_mutable_classes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_escaping_inner_quotes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_field_initializers_in_const_classes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_final_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_function_literals_in_foreach_calls</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_implementing_value_types</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_init_to_null</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_js_rounded_ints</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_multiple_declarations_per_line</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_null_checks_in_equality_operators</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_positional_boolean_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_print</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_private_typedef_functions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_redundant_argument_values</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_relative_lib_imports</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_renaming_method_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_return_types_on_setters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_returning_null</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_returning_null_for_future</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_returning_null_for_void</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_returning_this</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_setters_without_getters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_shadowing_type_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_single_cascade_in_expression_statements</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_slow_async_io</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_type_to_string</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_types_as_parameter_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_types_on_closure_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_unnecessary_containers</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_unstable_final_fields</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_unused_constructor_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_void_async</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">avoid_web_libraries_in_flutter</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">await_only_futures</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">camel_case_extensions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">camel_case_types</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">cancel_subscriptions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">cascade_invocations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">cast_nullable_to_non_nullable</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">close_sinks</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">collection_methods_unrelated_type</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">combinators_ordering</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">comment_references</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">conditional_uri_does_not_exist</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">constant_identifier_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">control_flow_in_finally</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">curly_braces_in_flow_control_structures</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">dangling_library_doc_comments</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">depend_on_referenced_packages</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">deprecated_consistency</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">deprecated_member_use_from_same_package</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">diagnostic_describe_all_properties</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">directives_ordering</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">discarded_futures</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">do_not_use_environment</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">empty_catches</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">empty_constructor_bodies</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">empty_statements</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">eol_at_end_of_file</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">exhaustive_cases</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">file_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">flutter_style_todos</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">hash_and_equals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">implementation_imports</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">implicit_call_tearoffs</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">implicit_reopen</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">invalid_case_patterns</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">iterable_contains_unrelated_type</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">join_return_with_assignment</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">leading_newlines_in_multiline_strings</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">library_annotations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">library_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">library_prefixes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">library_private_types_in_public_api</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">lines_longer_than_80_chars</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">list_remove_unrelated_type</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">literal_only_boolean_expressions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">matching_super_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">missing_whitespace_between_adjacent_strings</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_adjacent_strings_in_list</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_default_cases</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_duplicate_case_values</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_leading_underscores_for_library_prefixes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_leading_underscores_for_local_identifiers</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_literal_bool_comparisons</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_logic_in_create_state</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_runtimeType_toString</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_self_assignments</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">no_wildcard_variable_uses</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">non_constant_identifier_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">noop_primitive_operations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">null_check_on_nullable_type_parameter</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">null_closures</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">omit_local_variable_types</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">one_member_abstracts</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">only_throw_errors</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">overridden_fields</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">package_api_docs</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">package_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">package_prefixed_library_names</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">parameter_assignments</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_adjacent_string_concatenation</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_asserts_in_initializer_lists</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_asserts_with_message</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_collection_literals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_conditional_assignment</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_const_constructors</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_const_constructors_in_immutables</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_const_declarations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_const_literals_to_create_immutables</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_constructors_over_static_methods</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_contains</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_double_quotes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_expression_function_bodies</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_final_fields</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_final_in_for_each</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_final_locals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_final_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_for_elements_to_map_fromIterable</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_foreach</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_function_declarations_over_variables</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_generic_function_type_aliases</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_if_elements_to_conditional_expressions</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_if_null_operators</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_initializing_formals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_inlined_adds</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_int_literals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_interpolation_to_compose_strings</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_is_empty</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_is_not_empty</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_is_not_operator</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_iterable_whereType</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_mixin</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_null_aware_method_calls</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_null_aware_operators</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_relative_imports</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_single_quotes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_spread_collections</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_typing_uninitialized_variables</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">prefer_void_to_null</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">provide_deprecation_message</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">public_member_api_docs</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">recursive_getters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">require_trailing_commas</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">secure_pubspec_urls</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sized_box_for_whitespace</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sized_box_shrink_expand</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">slash_for_doc_comments</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sort_child_properties_last</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sort_constructors_first</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sort_pub_dependencies</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">sort_unnamed_constructors_first</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">test_types_in_equals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">throw_in_finally</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">tighten_type_of_initializing_formals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">type_annotate_public_apis</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">type_init_formals</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">type_literal_in_constant_pattern</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unawaited_futures</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_await_in_return</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_brace_in_string_interps</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_breaks</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_const</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_constructor_name</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_final</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_getters_setters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_lambdas</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_late</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_library_directive</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_new</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_null_aware_assignments</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_null_aware_operator_on_extension_on_nullable</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_null_checks</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_null_in_if_null_operators</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_nullable_for_final_variable_declarations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_overrides</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_parenthesis</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_raw_strings</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_statements</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_string_escapes</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_string_interpolations</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_this</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unnecessary_to_list_in_spreads</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unreachable_from_main</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unrelated_type_equality_checks</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">unsafe_html</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_build_context_synchronously</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_colored_box</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_decorated_box</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_enums</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_full_hex_values_for_flutter_colors</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_function_type_syntax_for_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_if_null_to_convert_nulls_to_bools</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_is_even_rather_than_modulo</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_key_in_widget_constructors</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_late_for_private_fields_and_variables</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_named_constants</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_raw_strings</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_rethrow_when_possible</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_setters_to_change_properties</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_string_buffers</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_string_in_part_of_directives</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_super_parameters</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_test_throws_matchers</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">use_to_and_as_if_applicable</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">valid_regexps</span></span>
+<span class="line"><span style="color:#222222">    - </span><span style="color:#11796D">void_checks</span></span></code></pre></div></div></div></article></main><footer id="page-footer"><div class="footer-section footer-main"><a href="/" class="brand" title="Dart"><img src="/assets/img/logo/logo-white-text.svg" alt="Dart" width="164"></a><div class="footer-social-links"><a href="https://medium.com/dartlang" target="_blank" rel="noopener" title="Medium blog"><svg><use href="/assets/img/social/medium.svg#medium"></use></svg> </a><a href="https://github.com/dart-lang" target="_blank" rel="noopener" title="GitHub"><svg><use href="/assets/img/social/github.svg#github"></use></svg> </a><a href="https://twitter.com/dart_lang" target="_blank" rel="noopener" title="X (Twitter)"><svg><use href="/assets/img/social/x.svg#x"></use></svg></a></div></div><div class="footer-section footer-tray"><div class="footer-licenses">Except as otherwise noted, this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, and code samples are licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">3-Clause BSD License</a>.</div><div class="footer-utility-links"><ul><li><a href="/terms" title="Terms of use">Terms</a></li><li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" title="Privacy policy">Privacy</a></li><li><a href="/security" title="Security philosophy and practices">Security</a></li></ul></div></div></footer></body></html>
