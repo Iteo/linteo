@@ -1,23 +1,22 @@
+import 'package:html/parser.dart';
 import 'package:linteo_extractor/on_lints_changed/rules_extractor/rules_extractor.dart';
 
 class HtmlExtractor extends RulesExtractor {
   HtmlExtractor(super.input);
 
   @override
-  String getBody() {
-    return getRawBody()
-        .replaceAll('linter:', '')
-        .replaceAll('rules:', '')
-        .trim();
+  String getRawBody() {
+    const startCodeTag = '<code>';
+    const endCodeTag = '</code></pre>';
+    final startIndex = input.lastIndexOf(startCodeTag) + startCodeTag.length;
+    final endIndex = input.lastIndexOf(endCodeTag);
+    final substring = input.substring(startIndex, endIndex);
+
+    return _parseHtmlString(substring);
   }
 
-  String getRawBody() {
-    const startCodeTag = '<code class="yaml prettyprint lang-yaml">';
-    const endCodeTag = '</code></pre></div>';
-
-    final startIndex = input.indexOf(startCodeTag) + startCodeTag.length;
-    final endIndex = input.indexOf(endCodeTag);
-
-    return input.substring(startIndex, endIndex);
+  String _parseHtmlString(String htmlString) {
+    final document = parse(htmlString);
+    return parse(document.body?.text ?? '').documentElement?.text ?? '';
   }
 }

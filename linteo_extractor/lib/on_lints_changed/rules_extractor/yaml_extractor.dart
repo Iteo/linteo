@@ -4,5 +4,5 @@ class YamlExtractor extends RulesExtractor {
   YamlExtractor(super.input);
 
   @override
-  String getBody() => input.replaceAll('linter:', '').replaceAll('rules:', '').trim();
+  String getRawBody() => input;
 }
