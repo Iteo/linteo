@@ -1,3 +1,8 @@
+## 1.4.0
+
+  * Add `valid_regexps` new rule
+  * Add `void_checks` new rule
+
 ## 1.3.0
 
 * Add `annotate_redeclares` new experimental rule

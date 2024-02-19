@@ -1,6 +1,6 @@
 name: linteo
 description: Flutter and Dart lint rules used at iteo
-version: 1.3.0
+version: 1.4.0
 
 repository: https://github.com/Iteo/linteo
 issue_tracker: https://github.com/Iteo/linteo/issues
