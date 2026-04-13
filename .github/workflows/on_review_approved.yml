@@ -21,7 +21,7 @@ jobs:
         id: extract_branch
         
       - uses: actions/checkout@v4.1.1
-      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - uses: dart-lang/setup-dart@65eb853c7ba17dde3be364c3d2858773e7144260
       - name: Run complete action
         id: complete_action
         run: |
