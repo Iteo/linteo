@@ -20,7 +20,7 @@ jobs:
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
         
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v7
       - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
       - name: Run complete action
         id: complete_action
